@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- tittre de la page -->
+<title>Mes Projets</title>
+<!-- icon de l'onglet -->
+<link rel="shortcut icon" href="./image/projet.jfif.jfif">
+<style>
+
+/* ===== RESET ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    padding:60px 8%;
+}
+
+/* ===== TITRE ===== */
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h1{
+    font-size:36px;
+    color:#00f5ff;
+}
+
+.section-title p{
+    margin-top:10px;
+    color:lightgray;
+}
+
+/* ===== STATISTIQUES ===== */
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-bottom:70px;
+    flex-wrap:wrap;
+}
+
+.stat-box{
+    background:rgba(255,255,255,0.05);
+    padding:25px 35px;
+    border-radius:20px;
+    text-align:center;
+    transition:0.4s;
+}
+
+.stat-box:hover{
+    background:#00f5ff;
+    color:black;
+    transform:scale(1.1);
+}
+
+.stat-box h2{
+    font-size:28px;
+}
+
+/* ===== GRID PROJETS ===== */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:40px;
+}
+
+/* ===== CARTE PROJET ===== */
+.project-card{
+    background:rgba(255,255,255,0.05);
+    border-radius:25px;
+    overflow:hidden;
+    transition:0.4s;
+    backdrop-filter:blur(10px);
+}
+
+.project-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 0 30px #00f5ff;
+}
+
+/* IMAGE CORRIGÉE (PAS COUPÉE) */
+.project-img{
+    width:100%;
+    height:auto;       /* 🔥 hauteur automatique */
+    display:block;
+}
+/* CONTENU */
+.project-content{
+    padding:25px;
+}
+
+.project-content h3{
+    margin-bottom:10px;
+    color:#00f5ff;
+    font-size:22px;
+}
+
+.project-content p{
+    font-size:14px;
+    color:lightgray;
+    margin-bottom:15px;
+}
+
+/* TAGS */
+.tags{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+
+.tag{
+    background:#00f5ff;
+    color:black;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+/* BOUTON */
+.btn{
+    display:inline-block;
+    padding:10px 22px;
+    border-radius:30px;
+    background:#00f5ff;
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:white;
+    transform:scale(1.1);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    body{
+        padding:40px 5%;
+    }
+}
+/* Retour */
+.section-title{
+text-align: center;
+    padding:12px;
+    border:none;
+    border-radius:30px;
+    background:#033a52;
+    color:rgb(23, 23, 26);
+    cursor:pointer;
+    transition:0.3s;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="section-title">
+    <h1>🚀 Mes Projets</h1>
+    <p>Quelques réalisations académiques et personnelles</p>
+</div>
+
+<!-- STATISTIQUES -->
+<div class="stats">
+    <div class="stat-box">
+        <h2>2+</h2>
+        <p>Projets réalisés</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>3</h2>
+        <p>Technologies maîtrisées</p>
+    </div>
+
+    <div class="stat-box">
+        <h2>100%</h2>
+        <p>Motivation</p>
+    </div>
+</div>
+
+<!-- PROJETS -->
+<div class="projects">
+
+    <div class="project-card">s
+        <img src="./image/un homme.png" class="project-img">
+        <div class="project-content">
+            <h3>Gestion Bibliothèque</h3>
+            <p>Application web permettant la gestion des livres et emprunts.
+                Ce projet de Gestion Bibliothèque permet de centraliser et d’organiser efficacement tous les livres disponibles, les emprunts et les retours. Il offre une interface intuitive pour gérer les utilisateurs et les stocks de livres, facilitant ainsi le suivi des emprunts et la disponibilité des ouvrages. <span>Ce système</span> vise à améliorer l’expérience des lecteurs tout en simplifiant le travail des bibliothécaires.
+            </p>
+
+            <div class="tags">
+                <div class="tag">HTML</div>
+                <div class="tag">CSS</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <img src="./image/dev.jpeg.jpeg" class="project-img">
+        <div class="project-content">
+            <h3>Mini Application Web</h3>
+            <p>Projet personnel de développement d'application web interactive.</p>
+
+            <div class="tags">
+                <div class="tag">Frontend</div>
+                <div class="tag">Design</div>
+            </div>
+
+            
+        </div>
+    </div>
+
+</div>
+<section class="section-title">
+    <a href="./index.html" class="btn">Retour </a>
+    
+<footer >
+    <p>📞 +261 038 25 883 77 | © 2026 Mika.dev</p>
+</footer>
+</section>
+</body>
+</html>
